@@ -1,0 +1,30 @@
+<div class="row justify-space-between-md">
+    <div class="profile-card">
+        <h1 class="page-title"> Your Profile </h1>
+        <br>
+        <form name="Profile" onsubmit="return validateForm()">
+            <div class="name-form">
+                <label for="name-login form"> Name: {{fName}} </label>
+                <input name="fName" type="text" id="FN"/>
+                <br>
+            </div>
+            <div class="age-form">
+                <label for="age-login form"> Age: {{ageField}} </label>
+                <input name="ageField" type="text" id="age"/>
+                <br>
+            </div>
+            <div class="email-form">
+                <label for="email-login form"> Email: {{email}} </label>
+                <input name="email" type="text" id="e"/>
+                <br>
+            </div>
+            <div class="group-form">
+                <button for="btn btn-enter"> Enter </button>
+                <input onclick="UpdateProfile();" type="submit" name="sub" value="Update">
+            </div>
+            <br>
+        </form>
+    </div>
+</div>
+
+<script src="./src/Profile.js" defer></script>
