@@ -1,4 +1,6 @@
-## The-Gaming-Spot
+# The-Gaming-Spot
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Gaming Library Application 
 
@@ -24,7 +26,7 @@ I WANT to be able to save/add games to the user's library.
 
 ## Technologies Used
 
-HTML, Tailwaind.css, JavaScript, RAWG Video Games API, React, Express, Node.js
+HTML, Tailwaind.css, JavaScript, RAWG Video Games API, React, Express, Node.js, Handlebars
 
 
 ## Links
@@ -41,4 +43,8 @@ Frederick Dirige, Jairo Osorio Ramirez, Andrey Shestopal, Kate Sundquist, Oscar 
 
 ## License
 
-<!-- insert when project is completed -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[MIT License](https://opensource.org/license/mit-0/)
+
+For the full text of this license, please click on the link provided.
