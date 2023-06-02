@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Results from './Results';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 const Search = () => {
     const [searchTerm, setSearchTerm] = useState("")
     const [gameResults, setGameResults] = useState([])
@@ -14,7 +16,7 @@ const Search = () => {
         let search = searchTerm.split(' ').join('-').toLowerCase()
 
         setGameResults([])
-        fetch(`http://rawg.io/api/games?key=49d71811d233484096295594248db6ab&search=${search}`)
+        fetch(`http://rawg.io/api/games?key=${API_KEY}&search=${search}`)
         .then(resp => resp.json())
         .then(({results}) => {
             results === undefined ? alert('No games found') : setGameResults(results)
