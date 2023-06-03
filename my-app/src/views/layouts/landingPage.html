@@ -4,13 +4,101 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.tailwindcss.com"></script>
-		<link
+
+		<!-- <link
 			rel="stylesheet"
 			href="src/App.css"
-		/>
-		<title>The Gaming Spot🎮</title>
+		/> -->
+		<title>Game Spot🎮</title>
 	</head>
-	<body>
-        
-    </body>
+	<header>
+		<!-- Navbar -->
+		<nav
+			class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-cyan-700 dark:text-neutral-200 md:flex-wrap md:justify-end"
+			data-te-navbar-ref
+		>
+			<h1 class="font-mono text-4xl font-semibold mr-96">Game Spot🎮</h1>
+			<div class="px-6">
+				<!-- Navigation links -->
+				<div
+					class="!visible hidden grow basis-[100%] items-center md:!flex md:basis-auto w-full"
+					id="navbarSupportedContentO"
+					data-te-collapse-item
+				>
+					<ul
+						class="mr-auto flex flex-col md:flex-row space-between"
+						data-te-navbar-nav-ref
+					>
+						<li data-te-nav-item-ref>
+							<a
+								class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary text-xl font-serif"
+								href="#!"
+								data-te-nav-link-ref
+								data-te-ripple-init
+								data-te-ripple-color="light"
+								>Home</a
+							>
+						</li>
+						<li data-te-nav-item-ref>
+							<a
+								class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary text-xl font-serif"
+								href="#!"
+								data-te-nav-link-ref
+								data-te-ripple-init
+								data-te-ripple-color="light"
+								>Top Games</a
+							>
+						</li>
+						<li data-te-nav-item-ref>
+							<a
+								class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white md:p-2 [&.active]:border-primary [&.active]:text-primary text-xl font-serif flex md: flex-wrap"
+								href="#!"
+								data-te-nav-link-ref
+								data-te-ripple-init
+								data-te-ripple-color="light"
+								>Sign Up</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero section with background image, heading, subheading and button -->
+		<div
+			class="relative h-96 overflow-hidden bg-cover bg-no-repeat p-12 text-center lg:h-screen"
+			style="
+				background-image: url('https://tpc.googlesyndication.com/simgad/13570980354465565591?');
+			"
+		>
+			<div
+				class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+				style="background-color: rgba(2, 56, 53, 0.7)"
+			>
+				<div class="flex h-full items-center justify-center">
+					<div class="text-white">
+						<h2 class="mb-4 text-4xl font-semibold font-serif">
+							"Unlock the Ultimate Gaming Experience!
+						</h2>
+						<h4 class="mb-6 text-xl font-semibold">
+							Search and Review From 100's of Games
+						</h4>
+						<div class="relative mb-3" data-te-input-wrapper-init>
+							<input
+								type="search"
+								class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 border-black border-4 rounded-md"
+								id="exampleSearch2"
+								placeholder="Type query"
+							/>
+							<label
+								for="exampleSearch2"
+								class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary font-serif flex justify-center text-center text-xl"
+								>Search</label
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 </html>
