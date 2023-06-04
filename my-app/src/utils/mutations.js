@@ -1,23 +1,87 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
-export const CREATE_MATCHUP = gql`
-  mutation createMatchup($game1: String!, $game2: String!) {
-    createMatchup(game1: $game1, game2: $game2) {
-      _id
-      game1
-      game2
+export const LOGIN_USER = gql`
+  mutation login($email: String!, $password: String!) {
+    login(email: $email, password: $password) {
+      token
+      user {
+        _id
+        username
+        email
+        gameCount
+        savedGames {
+          gameId
+          name
+          released
+          rating
+          genre
+          platform
+          screenshot
+        }
+      }
     }
   }
 `;
 
-export const CREATE_VOTE = gql`
-  mutation createVote($_id: String!, $gameNum: Int!) {
-    createVote(_id: $_id, gameNum: $gameNum) {
+export const ADD_USER = gql`
+  mutation addUser($username: String!, $email: String!, $password: String!) {
+    addUser(username: $username, email: $email, password: $password) {
+      token
+      user {
+        _id
+        username
+        email
+        gameCount
+        savedGames {
+          gameId
+          name
+          released
+          rating
+          genre
+          platform
+          screenshot
+        }
+      }
+    }
+  }
+`;
+
+export const SAVE_GAME = gql`
+  mutation saveGame($gameData: GameInput!) {
+    saveGame(gameData: $gameData) {
       _id
-      game1
-      game2
-      game1_votes
-      game2_votes
+      username
+      email
+      gameCount
+      savedGames {
+        gameId
+        name
+        released
+        rating
+        genre
+        platform
+        screenshot
+      }
+    }
+  }
+`;
+
+export const REMOVE_GAME = gql`
+  mutation removeGame($gameId: String!) {
+    removeGame(gameId: $gameId) {
+      _id
+      username
+      email
+      gameCount
+      savedGames {
+        gameId
+        name
+        released
+        rating
+        genre
+        platform
+        screenshot
+      }
     }
   }
 `;
