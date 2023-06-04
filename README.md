@@ -26,7 +26,7 @@ I WANT to be able to save/add games to the user's library.
 
 ## Technologies Used
 
-HTML, Tailwaind.css, JavaScript, RAWG Video Games API, React, Express, Node.js, Handlebars
+HTML, Tailwind.css, JavaScript, RAWG Video Games API, React, Express, Node.js, Handlebars
 
 
 ## Links

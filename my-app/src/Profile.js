@@ -76,9 +76,9 @@ function validateForm(e) {
 }
 
 function UpdateProfile() {
-    myProfile = new Profile();
+    Profile = new Profile();
     if (validateForm()) {
-        myProfile.setProfile();
+        Profile.setProfile();
     }  
 }
 
