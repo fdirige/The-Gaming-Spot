@@ -21,7 +21,7 @@ I WANT to be able to save/add games to the user's library.
 
 ## Visual
 
-<!-- insert when project is completed -->
+![Screenshot of page](./my-app/asset/Project3.JPG)
 
 
 ## Technologies Used
