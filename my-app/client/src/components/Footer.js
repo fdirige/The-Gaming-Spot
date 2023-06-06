@@ -9,9 +9,7 @@ export const Footer = () => {
         vertical
         style={{ padding: "1em 0em", marginTop: "2em" }}
       >
-        <Container textAlign="center">
-          <p>© {new Date().getFullYear()}. All rights reserved.</p>
-        </Container>
+        
       </Segment>
 
   );
