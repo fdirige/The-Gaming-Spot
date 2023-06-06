@@ -33,7 +33,7 @@ HTML, Tailwind.css, JavaScript, RAWG Video Games API, React, Express, Node.js, H
 
 [GitHub Repo](https://github.com/fdirige/The-Gaming-Spot)
 
-[Deployed Link]()
+[Deployed Link](https://protected-garden-58120.herokuapp.com/)
 
 
 ## Authors
